@@ -1,0 +1,10 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = sourabh madhukar jadhav
+	email = 94791338+sourabh8585@users.noreply.github.com
+[uesr]
+	email = jadhavsourabh969@gmail.com

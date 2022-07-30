@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet" href="HtmlTagsCss.css"> -
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>HTML TAGS</title>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></head>
+<style>
+    /* a:active {
+        color: #FF00CC;
+    }
+    
+    div {
+        color: red;
+    }
+    
+    .heading-2 {
+        font-size: 16px;
+        color: green;
+        border: 1px solid red;
+        padding: 10px;
+    }
+    
+    .heading {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    #id-selector {
+        font-size: 14px;
+        font-weight: bold;
+        color: blue;
+    } */
+    
+    n-check {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none
+    }
+</style> -->
+
+
+<body>
+    <!-- Problem 1 -->
+    <!-- Build the three tables information as shown in below screenshot using only html tag Employee information -->
+    <table border="1" cellpadding="3">
+        -- Table Head
+        <thead>
+            <th>Employee</th>
+            <th>Position</th>
+            <th>Country</th>
+        </thead>
+        <Table Row -- & Its Data <tr>
+            <td> Alfreds Sampson</td>
+            <td>Architect</td>
+            <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Joe Handel</td>
+                <td>Designer</td>
+                <td>Turkey</td>
+            </tr>
+            <tr>
+                <td>Ernst Young</td>
+                <td>Developer</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Helen Bennett</td>
+                <td>Teacher</td>
+                <td>Uk</td>
+            </tr>
+            <tr>
+                <td>Yoshi Hamada</td>
+                <td>manger</td>
+                <td>Japan</td>
+            </tr>
+            <tr>
+                <td>Givanni Rovelli</td>
+                <td>Chef</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Student scores</h2>
+        <table border="1" cellpadding="3">
+            <thead>
+                <th>Student</th>
+                <th>Subject scores</th>
+                <th>Marks</th>
+            </thead>
+            <tr>
+                <td rowspan="3">Raj</td>
+                <td>Algebra</td>
+                <td>12</td>
+            </tr>
+        </table>
+        <hr>
+        <table style border="1" cellpadding="3">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>SavinĀs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+            <tÿoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                </tr>
+            </tÿoot>
+        </table>
+        <hr>
+        <table style border="1" cellpadding="3">
+            <caption>Monthly savinĀs</caption>
+            <tr>
+                <th>Month</th>
+                <th>SavinĀs</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+        </table>
+        <hr>
+        <table style border="1" cellpadding="3">
+            <tr>
+                <th>Name</th>
+                <th>Bill Gate</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Telephone</th>
+            </tr>
+            <tr>
+                <td>545646544654</td>
+
+            </tr>
+            <tr>
+                <td>4645464564</td>
+            </tr>
+            <tr>
+                <td>464545555</td>
+            </tr>
+
+        </table>
+        <hr>
+        <table style border="1" cellpadding="3">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>bill Gate</td>
+                <td>46464646</td>
+                <td>45465463</td>
+            </tr>
+        </table>
+        <hr>
+
+        <table border="1" cellpadding>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>SavinĀs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+            <tÿoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                </tr>
+            </tÿoot>
+        </table>
+        <hr>
+        <ul>
+            <li>Coffee</li>
+            <li type="square">Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul>
+            <li>banana</li>
+            <li type="brush">mango</li>
+        </ul>
+        <hr>
+        <ol>
+            <li>Coffee</li>
+            <li type="A">water </li>
+            <li type="a">Milk </li>
+            <li type="I">Apple </li>
+            <li type="i">Greps </li>
+        </ol>
+        <hr>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        <dl>
+            <dt>Tea</dt>
+            <dd>- red hot drink </dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        <address>
+
+    </address>
+        <h1>The article element</h1>
+
+        <article>
+            <h1>The article element</h1>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser development by Google , released in the in 2008. Chrome is world's most popular web browser today!</p>
+        </article>
+        <h1>The blockquote element</h1>
+
+        <p>Here is a quote from WWF's website:</p>
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+        <h1>The blockquote element</h1>
+
+        <blockquote cite="http://www.worldwidlife.org/who/index.html">
+            for 50 years, www has been protecting the future of nature. www world leading conservation organization, www work in the 100 countries and is supported by 1.2 million number in the United states and close to million globally www work in the 1000 countries
+            and is supported by 10 million number in the United states and close to million globally
+        </blockquote>
+        <h1>The canvas element</h1>
+        <hr>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 100);
+        </script>
+        <h1>The canvas element</h1>
+        <hr>
+        <canvas id="myCanvas">
+    Your browser does not support the canvas tag.
+    </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(20, 20, 75, 50);
+
+            //Turn transparency on
+            ctx.globalAlpha = 0.2;
+            ctx.fillStyle = "blue";
+            ctx.fillRect(50, 50, 75, 50);
+            ctx.fillStyle = "green";
+            ctx.fillRect(80, 80, 75, 50);
+        </script>
+
+        <h2>Standard pre</h2>
+        <pre>This is a standard pre. It will use as much space as it needs.</pre>
+
+        <h2>Fixed width pre</h2>
+        <div style="width:200px;overflow:auto">
+            <pre>This is a pre with a fixed width. It will use as much space as specified.</pre>
+        </div>
+        <h2>Standard pre</h2>
+        <pr>This is a standard pre . it will use as much space as it needs</pr>
+
+
+        <h2>Fixed width pre </h2>
+        <div style="width:200px;overflow:auto">
+        </div>
+        <h2>Standard pre </h2>
+        <hr>
+        <iÿrame src="demo_iÿrame.htm" name="iÿrame_a"></iÿrame>
+        <p>
+            <a hreÿ="https://www.w3schools.com" tarĀet="iÿrame_a">W3Schools.com</a>
+        </p>
+        <p>I was trying to boot my computer, but I got this hilarious message:</p>
+        <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+        <p> I was trying to boot my computer , bur i got this hilarious massage:</p>
+        <p> i was trying ti boot my comouter m bust ia gor this hilarious massage </p>
+
+        <hr>
+        <p>The volume of a box is
+            <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+            <var>w</var> the width and <var>h</var> the height of the box.</p>
+        <hr>
+        <p>the volume of a box is
+            <var>I</var>
+        </p>
+        <hr>
+        <form action="/action_paĀe.php" tarĀet="_blank" method="Āet" novalidate>
+            <fieldset>
+                <leĀend>Personal inÿormation:</leĀend>
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey"><br> Last name:<br>
+                <input type="text" name="lastname" value="Mouse"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <from action="/action_paAe.php" target="_black" method="Aet" novalidate></from>
+        <fieldset>
+            <leAend>Personal information:</leAend>
+            fist name:<br>
+            <input type="text " name="fistname " value="sourabh"><br> last name:<br>
+            <input type="text " name="fistname " value="jadhav"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        <hr>
+        <select name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+   </select>
+        <hr>
+        <select name="Care" size="4" multiple>
+    <option value="volvo"> Volvo</option>
+    <option value="saab">saa</option>
+    <option value="Fiat" selected>Fiat</option>
+    <option value="audi">audi</option>
+</select>
+        <hr>
+        <select name="fruit" size="4" multiple>
+        <option value="mango">Mango</option>
+        <option value="banana">Banana </option>
+        <option value="greps" selected>Greps</option>
+        <option value="apple">Apple</option>
+    </select>
+        <textarea name="messaĀe" rows="10" cols="30"></textarea>
+        <textarea name="massagAe" rows="10" cols="40"></textarea>
+        <hr>
+        <form action="/action_paĀe.php">
+            <input list="browsers">
+            <datalist id="browsers">
+ <option value="Internet Explorer">
+ <option value="Fireÿox">
+ <option value="Chrome">
+ <option value="Opera">
+ <option value="Saÿari">
+ </datalist>
+        </form>
+        <form oninput="x.value=parseInt(a.value)
+                          +parseInt(b.value)">
+            <input type="number" id="a" name="a"> +
+            <input type="number" id="b" name="b"> =
+            <output name="x" form="a b"></output>
+        </form>
+        ● <input type="hidden"> defines a hidden input field. A hidden field let web developers include data that cannot be seen or modified by users when a ÿorm is submitted. A hidden field from stores what database record that needs to be updated when
+        the ÿorm is submitted. ● <input type="imaĀe"> defines an imaĀe as a submit button. ● <input type="month"> allows the user to select a month and year. ● <input type="number"> numeric input field.
+        <input type="number" name="quantity" min="1" max="5"> ● <input type="password"> password field. ● <input type="radio"> radio button. EĀ.
+        <hr> class Account { private string _accountNo; public Account(string accountNo, int balance) { AccountNo = accountNo; Balance = balance; } public string AccountNo { get => _accountNo; set { //raise exception if value is null if(String.IsNullOrEmpty(value))
+        throw new InvalidOperationException(); _accountNo = value; } } public int Balance { get; set; } public void Credit(int amount) { Balance = amount + Balance; //update the balance with a summation of the inputted amount and the current balance //Logs
+        the new balance to the screen Console.WriteLine(Balance); } } -->
+
+        <!-- 1) over reading mens that is same property as wel as showing below -->
+        <!-- css
+
+
+    <div class="heading-2">
+        I am class Selector
+    </div>
+    <div class="heading.heading">
+        i am class selector
+    </div>
+    <div class="id-selector">
+        I am id selector I am id selector I am id selector I am id selector I am id selector I am id selector
+
+    </div>
+    <div class="tag selector">
+        I am tag selector
+    </div>
+    <ul>
+        <div class="headibng">
+            i am heading
+        </div>
+        <div class="heading 30">
+            i am selector
+        </div>
+        <div class="heading-4">
+            i am heading 4
+        </div>
+    </ul>
+    <hr>
+    <div class="continer"></div>
+    <h1>The background-attachment Property</h1>
+    <h1>Hello Home</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <div class="n-check">
+        i am n check heading
+    </div>
+<h2></h2>
+    <!-- 
+    mage is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed.</p>sss -->
+
+        <!-- </html>
+selector in priority in -->
+        <!--1) property with ! important this is dark color de clear
+    3)id selector have highest priority
+    class selector
+ tag selector
+global selector
+-- in bock level in  css this for ext css     >
